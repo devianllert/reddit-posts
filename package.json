@@ -1,0 +1,93 @@
+{
+  "name": "reddit-posts",
+  "version": "0.0.0",
+  "author": "Ruslan Povolockii <devianllert@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "npm run lint:eslint && npm run lint:css",
+    "lint:fix": "npm run lint:eslint:fix && npm run lint:css:fix",
+    "lint:eslint": "eslint --ext .tsx,.ts .",
+    "lint:eslint:fix": "eslint --fix --ext .tsx,.ts .",
+    "lint:css": "stylelint **/*.{ts,tsx}",
+    "lint:css:fix": "stylelint --fix **/*.{ts,tsx}",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.1",
+    "axios": "^0.19.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-essential-tools": "^0.37.3",
+    "react-icons": "^3.10.0",
+    "react-query": "^1.5.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-spring": "^8.0.27",
+    "react-virtual": "^2.2.0",
+    "styled-components": "^5.1.0",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.3.5",
+    "@types/jest": "^25.2.3",
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-query": "^1.1.2",
+    "@types/styled-components": "^5.1.0",
+    "@types/styled-system": "^5.1.9",
+    "babel-plugin-styled-components": "^1.10.7",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-jest-dom": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-plugin-testing-library": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest-styled-components": "^7.0.2",
+    "lint-staged": "^10.2.6",
+    "react-scripts": "3.4.1",
+    "source-map-explorer": "^2.4.2",
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
+    "typescript": "^3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "npm run lint"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

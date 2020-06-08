@@ -1,0 +1,28 @@
+{
+  "BACK": "Назад",
+
+  "FIELD_ERROR_EMAIL_INVALID": "Введите корректную почту",
+  "FIELD_ERROR_REQUIRED": "Это поле обязательно",
+  
+  "AUTH_HOME_LINK": "Главная",
+  
+  "NOT_FOUND_TITLE": "Страница не найдена",
+  
+  "HOME_TITLE": "Главная",
+  
+  "EMAIL_PLACEHOLDER": "Введите e-mail",
+  "PASSWORD_PLACEHOLDER": "Введите пароль",
+  "USERNAME_PLACEHOLDER": "Введите имя пользователя",
+  
+  "LOGIN_TITLE": "Войти в аккаунт",
+  "LOGIN_ACTION_FORGOT_PASSWORD": "Забыли пароль?",
+  "LOGIN_PAGE_ACTION_LOGIN": "Войти",
+  "LOGIN_PAGE_ACTION_REGISTER": "Нет аккаунта?",
+  "LOGIN_ERROR": "Неверное имя или пароль",
+
+
+  "SIGNUP_TITLE": "Зарегистрируйте аккаунт",
+  "SIGNUP_PAGE_ACTION_SIGNUP": "Зарегистрироваться",
+  "SIGNUP_PAGE_ACTION_LOGIN": "Уже есть аккаунт?",
+  "REGISTER_ERROR": "Такой пользователь уже есть"
+}
